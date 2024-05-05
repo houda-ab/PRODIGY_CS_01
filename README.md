@@ -18,18 +18,13 @@ The script uses a simple substitution cipher for encryption and decryption. Here
 4. The decrypted message is formed by joining these characters.
 
 # the code:
-message_to_encrypt = input("Enter your text: ")
-Key = int(input("Enter the key: "))
-
-# Encryption
-encrypted_message = [(ord(i) + Key) for i in message_to_encrypt]
-encrypted_message = [chr(i) for i in encrypted_message]
-encrypted = "".join(encrypted_message)
-
-# Decryption
-decrypted_message = [(ord(i) - Key) for i in encrypted_message]
-decrypted_message = [chr(i) for i in decrypted_message]
-decrypted = "".join(decrypted_message)
-
-print("The encrypted message is:", encrypted)
-print("The decrypted message is:", decrypted)
+message_to_encrypt = input("Enter your text: ") \n
+Key = int(input("Enter the key: ")) \n
+encrypted_message = [(ord(i) + Key) for i in message_to_encrypt] \n
+encrypted_message = [chr(i) for i in encrypted_message] \n
+encrypted = "".join(encrypted_message) \n
+decrypted_message = [(ord(i) - Key) for i in encrypted_message] \n
+decrypted_message = [chr(i) for i in decrypted_message] \n
+decrypted = "".join(decrypted_message) \n
+print("The encrypted message is:", encrypted) \n
+print("The decrypted message is:", decrypted) \n
